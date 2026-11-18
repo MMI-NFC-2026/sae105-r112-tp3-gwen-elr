@@ -26,6 +26,7 @@ justify-content: center;
   justify-content: center;
   border: 1px solid;
   border-radius: 50%;
+  position: absolute;
 }
   
   /* Largeur du bouton 50px - https://developer.mozilla.org/fr/docs/Web/CSS/width */
@@ -37,6 +38,7 @@ justify-content: center;
   /* Bordure arrondie pour faire un cercle - https://developer.mozilla.org/fr/docs/Web/CSS/border-radius */
 .carousel__button--prev {
   transform: rotate(180deg);
+  left: 16px;
   /* Fait pivoter le bouton de 180 degrés - https://developer.mozilla.org/fr/docs/Web/CSS/transform */
 }
 
@@ -56,7 +58,7 @@ justify-content: center;
   /* Marge négative à droite pour coller le carousel au bord de l'écran -24px - https://developer.mozilla.org/fr/docs/Web/CSS/margin */
   /* Définit le type de défilement pour accrocher les éléments - https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-type */
 .carousel__item {
-  flex: 1 0 260px;
+  flex: 1 0 100%;
   scroll-snap-align: center;
   /* L'élément prend 1 part de l'espace disponible, ne rétrécit pas, et a une largeur de base de 260px - https://developer.mozilla.org/fr/docs/Web/CSS/flex */
   /* Aligne l'élément au centre lors du défilement - https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-align */
